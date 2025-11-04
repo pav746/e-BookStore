@@ -1,5 +1,5 @@
 //import { useState } from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Outlet } from 'react-router-dom'
 //import reactLogo from './assets/react.svg'
 //import viteLogo from '/vite.svg'
 import './App.css'
@@ -11,26 +11,14 @@ import AppRoutes from './routes/router'
 function App() {
  
   return (
-    <div className="app-root">
-      <Navbar />
-
-         {/* Centralized routes */}
-         <AppRoutes />
-
-      <footer style={{marginTop:20}}>
-        <div>
-          <a href="https://vite.dev" target="_blank" rel="noreferrer">
-            <img src={viteLogo} className="logo" alt="Vite logo" />
-          </a>
-          <a href="https://react.dev" target="_blank" rel="noreferrer">
-            <img src={reactLogo} className="logo react" alt="React logo" />
-          </a>
-        </div>
-        <p className="read-the-docs">
-          Click on the Vite and React logos to learn more
-        </p>
-      </footer>
-    </div>
+    <>
+      <nav>Navbar</nav>
+    <main className="min-h-screen max-w-screen-2xl mx-auto px-4 py-6">
+      <Outlet />
+    </main>
+    <footer>Footer</footer>
+    </>
+   
   )
 }
 
