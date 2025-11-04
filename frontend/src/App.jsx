@@ -1,7 +1,7 @@
-import { useState } from 'react'
+//import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+//import reactLogo from './assets/react.svg'
+//import viteLogo from '/vite.svg'
 import './App.css'
 import Home from './pages/Home'
 import About from './pages/About'
@@ -9,8 +9,7 @@ import Navbar from './components/Navbar'
 import AppRoutes from './routes/router'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+ 
   return (
     <div className="app-root">
       <Navbar />
