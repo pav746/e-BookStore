@@ -1,20 +1,18 @@
 import { useState } from 'react'
-import { Routes, Route, Link } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Home from './pages/Home'
 import About from './pages/About'
+import Navbar from './components/Navbar'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div className="app-root">
-      <nav className="nav">
-        <Link to="/" className="nav-link">Home</Link>
-        <Link to="/about" className="nav-link">About</Link>
-      </nav>
+      <Navbar />
 
       <Routes>
         <Route path="/" element={<Home />} />
