@@ -6,6 +6,7 @@ import './App.css'
 import Home from './pages/Home'
 import About from './pages/About'
 import Navbar from './components/Navbar'
+import AppRoutes from './routes/AppRoutes'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,10 +15,8 @@ function App() {
     <div className="app-root">
       <Navbar />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
+         {/* Centralized routes */}
+         <AppRoutes />
 
       <footer style={{marginTop:20}}>
         <div>
