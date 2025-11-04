@@ -6,7 +6,7 @@ import './App.css'
 import Home from './pages/Home'
 import About from './pages/About'
 import Navbar from './components/Navbar'
-import AppRoutes from './routes/AppRoutes'
+import AppRoutes from './routes/router'
 
 function App() {
   const [count, setCount] = useState(0)
