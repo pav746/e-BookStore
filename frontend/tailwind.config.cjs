@@ -1,8 +1,22 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ['./index.html', './src/**/*.{js,jsx,ts,tsx}'],
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
-    extend: {},
+    extend: {
+      color: {
+        primary: '#FFCE1A',
+        secondary: '#0D0842',
+        blackbg: '#F3F3F3',
+        favorite: '#FF5841',
+      },
+      fontsfamily: {
+        'primary': ['Montserrat', 'sans-serif'],
+        'secondary': ['Nunito Sans', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }
