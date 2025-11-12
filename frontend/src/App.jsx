@@ -6,13 +6,12 @@ import './App.css'
 import Home from './pages/Home'
 import About from './pages/About'
 import Navbar from './components/Navbar'
-import AppRoutes from './routes/router'
 
 function App() {
  
   return (
     <>
-      <nav>Navbar</nav>
+      <Navbar />
     <main className="min-h-screen max-w-screen-2xl mx-auto px-4 py-6 font-primary">
       <Outlet />
     </main>
