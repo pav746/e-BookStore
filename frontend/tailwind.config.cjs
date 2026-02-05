@@ -6,13 +6,13 @@ export default {
   ],
   theme: {
     extend: {
-      color: {
+      colors: {
         primary: '#FFCE1A',
         secondary: '#0D0842',
         blackbg: '#F3F3F3',
         favorite: '#FF5841',
       },
-      fontsfamily: {
+      fontFamily: {
         'primary': ['Montserrat', 'sans-serif'],
         'secondary': ['Nunito Sans', 'sans-serif'],
       },
